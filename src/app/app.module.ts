@@ -5,17 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { SharedModule } from './shared/shared.module';
+import { MaterialModule } from './material/material.module';
+import { CollectionsModule } from './collections/collections.module';
+import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
+    CollectionsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharedModule
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

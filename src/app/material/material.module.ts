@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+
+
 // Material Form Controls
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatCheckboxModule } from '@angular/material/checkbox';
@@ -120,4 +123,4 @@ import { MatTableModule } from '@angular/material/table';
     MatTableModule
   ]
 })
-export class SharedModule { }
+export class MaterialModule { }
