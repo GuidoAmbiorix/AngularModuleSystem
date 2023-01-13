@@ -1,0 +1,12 @@
+<ul class="nav nav-tabs">
+  <li class="nav-item" *ngFor="let tab of Tabs;let i = index" >
+    <a class="nav-link"
+    [routerLink]="tab.TabRoute"
+    [routerLinkActive]="tab.TabRoute"
+    [routerLinkActiveOptions]="{exact:true}"
+    >{{tab.TabName}}</a>
+  </li>
+</ul>
+<section>
+<ng-content></ng-content>
+</section>
